@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <!-- Prevent browsers from keeping an old invitation document after site updates. -->
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Diksha & Mukul - Wedding Invitation</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Open Graph / WhatsApp Preview Meta Tags -->
+  <meta property="og:title" content="Diksha & Mukul - Wedding Invitation">
+  <meta property="og:description" content="We joyfully invite you to celebrate our special day with us.">
+  <meta property="og:image" content="https://adv-gyan.github.io/Diksha-Mukul-wedding-invite/assets/couple_reference.jpg?v=20261001">
+  <meta property="og:url" content="https://adv-gyan.github.io/Diksha-Mukul-wedding-invite/">
+  <meta property="og:type" content="website">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://adv-gyan.github.io/Diksha-Mukul-wedding-invite/assets/couple_reference.jpg?v=20261001">
+  
+  <link rel="stylesheet" href="css/style.css?v=20260922">
+  <link rel="stylesheet" href="css/wedding-invite-animations.css?v=20260922">
+</head>
+<body>
+
+<div class="mobile-wrapper">
+
+  <!-- MAGIC DUST EFFECT -->
+  <div class="gold-particles"></div>
+
+  <!-- ENVELOPE OVERLAY -->
+  <div class="invite-envelope-wrapper" id="inviteEnvelopeWrapper">
+    <div class="envelope-ornament ornament-top">✦</div>
+    <div class="envelope-ornament ornament-left">❦</div>
+    <div class="envelope-ornament ornament-right">❦</div>
+    <div class="envelope-content-container">
+      <p class="envelope-kicker">A Wedding Invitation</p>
+      <h1 class="envelope-names">
+        Diksha <span class="ampersand">&</span> Mukul
+      </h1>
+      <div class="envelope-date">23rd &amp; 24th November 2026</div>
+      <div class="envelope-rule"><span>✤</span></div>
+      <div class="invite-envelope" id="inviteEnvelope">
+        <div class="envelope-body">
+          <img src="assets/envelope.jpg?v=20261001" alt="Envelope" class="envelope-image" id="envelopeImage">
+        </div>
+        <p class="envelope-hint"><span class="hint-line"></span> Tap the envelope to open <span class="hint-line"></span></p>
+        <p class="envelope-subhint">With love, we invite you to celebrate with us</p>
+      </div>
+    </div>
+  </div>
+
+  <main id="mainContent" class="hidden">
+    <audio id="weddingMusic" preload="auto" loop>
+      
+    </audio>
+
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Pause music" aria-pressed="true">
+      <span class="music-icon" id="musicIcon">♫</span>
+      <span class="music-label" id="musicLabel">Music On</span>
+    </button>
+    
+    <div class="petal-field">
+      <span class="petal"></span><span class="petal"></span><span class="petal"></span>
+      <span class="petal"></span><span class="petal"></span><span class="petal"></span>
+    </div>
+
+    <section class="hero-section" id="hero">
+      <div class="hero-content">
+        <h1 class="hero-names">
+          <span class="name">Diksha</span><span class="ampersand">&</span><span class="name">Mukul</span>
+        </h1>
+        <p class="hero-date">23rd &amp; 24th November 2026</p>
+        <p class="wedding-hashtag">A Celebration of Love</p>
+      </div>
+    </section>
+
+    <section class="invite-section couple-section">
+      <div class="photo-container reveal reveal--scale">
+        <img src="assets/couple_reference.jpg?v=20261001" alt="Diksha & Mukul" class="couple-photo">
+      </div>
+      <div class="couple-text reveal reveal--up">
+        <h2 class="accent-title">Two Souls, One Journey</h2>
+        <p class="body-text">With the blessings of our families, we invite you to celebrate the wedding of Diksha and Mukul with us.</p>
+        <p class="body-text">Together with our families, we begin a beautiful new chapter.</p>
+      </div>
+    </section>
+
+    <div class="theme-separator"><span>✤</span></div>
+    <section class="invite-section timeline-section">
+      <h2 class="section-title reveal reveal--up">Mark Your Calendar</h2>
+      <div class="timeline-container">
+        <svg class="wavy-line" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path d="M 50 0 C 90 8, 90 22, 50 30 C 10 40, 10 55, 50 65 C 90 75, 90 90, 50 100" fill="none" stroke="rgba(212,175,55,0.2)" stroke-width="1" />
+          <path id="timelineProgress" d="M 50 0 C 90 8, 90 22, 50 30 C 10 40, 10 55, 50 65 C 90 75, 90 90, 50 100" fill="none" stroke="#b30000" stroke-width="2" />
+        </svg>
+
+        <div class="timeline-item reveal event-card">
+          <div class="timeline-image landscape"><img src="assets/haldi.jpg?v=20261001" alt="Haldi"></div>
+          <div class="timeline-card"><h3 class="event-title">Haldi</h3><p class="event-date">23 November 2026</p><p class="event-time">9:00 AM</p><p class="event-venue">The White Palace Banquet by Khanak, Sector-70, Noida</p></div>
+        </div>
+
+        <div class="timeline-item reveal event-card">
+          <div class="timeline-image landscape"><img src="assets/engagement.jpg?v=20261001" alt="Engagement"></div>
+          <div class="timeline-card"><h3 class="event-title">Engagement</h3><p class="event-date">23 November 2026</p><p class="event-time">7:00 PM</p><p class="event-venue">The White Palace Banquet by Khanak, Sector-70, Noida</p></div>
+        </div>
+
+        <div class="timeline-item reveal event-card">
+          <div class="timeline-image landscape"><img src="assets/wedding.jpg?v=20261001" alt="Wedding"></div>
+          <div class="timeline-card"><h3 class="event-title">Wedding</h3><p class="event-date">24 November 2026</p><p class="event-time">Baraat 8:00 PM · Dinner 9:00 PM</p><p class="event-venue">The White Palace Banquet by Khanak, Sector-70, Noida<br>Doli: Taron Ki Chhaon Mein</p></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="theme-separator"><span>✤</span></div>
+    <section class="invite-section countdown-section">
+      <h2 class="section-title reveal reveal--up">The Big Day</h2>
+      <div class="countdown-wrapper reveal">
+        <div class="cd-box"><div class="cd-flourish top">✤</div><span class="cd-num" id="days">00</span><div class="cd-sep"><span>♦</span></div><span class="cd-label">DAYS</span><div class="cd-flourish bottom">✤</div></div>
+        <div class="cd-divider"></div>
+        <div class="cd-box"><div class="cd-flourish top">✤</div><span class="cd-num" id="hours">00</span><div class="cd-sep"><span>♦</span></div><span class="cd-label">HOURS</span><div class="cd-flourish bottom">✤</div></div>
+        <div class="cd-divider"></div>
+        <div class="cd-box"><div class="cd-flourish top">✤</div><span class="cd-num" id="minutes">00</span><div class="cd-sep"><span>♦</span></div><span class="cd-label">MINUTES</span><div class="cd-flourish bottom">✤</div></div>
+        <div class="cd-divider"></div>
+        <div class="cd-box"><div class="cd-flourish top">✤</div><span class="cd-num" id="seconds">00</span><div class="cd-sep"><span>♦</span></div><span class="cd-label">SECONDS</span><div class="cd-flourish bottom">✤</div></div>
+      </div>
+    </section>
+
+    <div class="theme-separator"><span>✤</span></div>
+    <section class="invite-section venue-section">
+      <h2 class="section-title reveal reveal--up">Directions</h2>
+      <div class="venue-card reveal"><div class="venue-pin" aria-hidden="true">⌖</div><p class="venue-kicker">Haldi</p><h3>The White Palace Banquet by Khanak</h3><p class="venue-address">Sector-70, Noida, Uttar Pradesh 201316</p><div class="venue-rule"><span>✦</span></div><p class="venue-note">Tap below for directions and the easiest route to the celebration.</p><a href="https://maps.app.goo.gl/" target="_blank" rel="noopener noreferrer" class="am-button venue-map-button"><span>Open in Google Maps</span><span class="venue-arrow" aria-hidden="true">→</span></a></div>
+      <div class="venue-card reveal"><div class="venue-pin" aria-hidden="true">⌖</div><p class="venue-kicker">Engagement</p><h3>The White Palace Banquet by Khanak</h3><p class="venue-address">Sector-70, Noida, Uttar Pradesh 201316</p><div class="venue-rule"><span>✦</span></div><p class="venue-note">Tap below for directions and the easiest route to the celebration.</p><a href="https://maps.app.goo.gl/" target="_blank" rel="noopener noreferrer" class="am-button venue-map-button"><span>Open in Google Maps</span><span class="venue-arrow" aria-hidden="true">→</span></a></div>
+      <div class="venue-card reveal"><div class="venue-pin" aria-hidden="true">⌖</div><p class="venue-kicker">Wedding Venue</p><h3>The White Palace Banquet by Khanak</h3><p class="venue-address">Sector-70, Noida, Uttar Pradesh 201316</p><div class="venue-rule"><span>✦</span></div><p class="venue-note">Tap below for directions and the easiest route to the celebration.</p><a href="https://maps.app.goo.gl/" target="_blank" rel="noopener noreferrer" class="am-button venue-map-button"><span>Open in Google Maps</span><span class="venue-arrow" aria-hidden="true">→</span></a></div>
+    </section>
+
+    <div class="theme-separator"><span>✤</span></div>
+    <section class="invite-section rsvp-section">
+      <h2 class="section-title reveal reveal--up">RSVP</h2>
+      <div class="rsvp-card reveal reveal--up">
+        <form class="rsvp-form" id="rsvpForm" action="#" method="POST">
+          <input type="text" name="name" placeholder="Full Name" required class="am-input">
+          <input type="tel" name="phone" placeholder="Phone Number" required class="am-input">
+          <select name="attendance" class="am-input" required><option value="" disabled selected>Will you be joining us?</option><option value="attending">Joyfully Attending</option><option value="declining">Regretfully Declining</option></select>
+          <div class="rsvp-events"><p class="rsvp-events-title">Which events will you attend?</p><label><input type="checkbox" name="events" value="Haldi"> Haldi</label><label><input type="checkbox" name="events" value="Mehendi"> Mehendi</label><label><input type="checkbox" name="events" value="Wedding"> Wedding</label></div>
+          <button type="submit" class="am-button" id="rsvpSubmitBtn">Confirm Attendance</button>
+          <div class="rsvp-success" id="rsvpSuccess" role="status" aria-live="polite" hidden><span class="rsvp-success-mark">✦</span><strong>Thank you!</strong><span>Your response has been received on this page.</span></div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="invite-footer">
+      <div class="footer-logo"><img src="assets/logo.jpg?v=20261001" alt="AM" class="am-logo-mark"></div>
+      <div class="gold-line"></div>
+      <h2 class="footer-names">Diksha & Mukul</h2>
+      <p class="body-text">We look forward to celebrating with you.</p>
+      <p class="wedding-hashtag wedding-hashtag--footer">Diksha &amp; Mukul</p>
+    </footer>
+  </main>
+</div>
+
+<script src="js/script.js?v=20260922"></script>
+</body>
+</html>
