@@ -2578,7 +2578,7 @@ a {
 
 .hero-section .hero-date {
   position: absolute !important;
-  top: 80.5% !important;
+  top: 75.5% !important;
   left: 0 !important;
   width: 100% !important;
   margin: 0 !important;
@@ -2594,7 +2594,7 @@ a {
 
 .hero-section .hero-content .wedding-hashtag {
   position: absolute !important;
-  top: 87% !important;
+  top: 81.5% !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
   margin: 0 !important;
@@ -2615,13 +2615,13 @@ a {
   }
 
   .hero-section .hero-date {
-    top: 80% !important;
+    top: 75% !important;
     font-size: 0.68rem !important;
     letter-spacing: 0.10em !important;
   }
 
   .hero-section .hero-content .wedding-hashtag {
-    top: 86.5% !important;
+    top: 81% !important;
     font-size: 0.51rem !important;
     letter-spacing: 0.14em !important;
   }
