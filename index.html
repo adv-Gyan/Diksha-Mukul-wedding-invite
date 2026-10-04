@@ -55,12 +55,12 @@
     </div>
   </div>
 
-  <main id="mainContent" class="hidden">
-    <audio id="weddingMusic" preload="auto" loop>
-      <source src="assets/invite-music.mp3?v=20261004" type="audio/mpeg">
-    </audio>
+  <!-- Keep audio outside the initially hidden main content for reliable iOS playback. -->
+  <audio id="weddingMusic" preload="auto" loop src="./assets/invite-music.mp3?v=20261004" aria-hidden="true"></audio>
 
-    <button class="music-toggle" id="musicToggle" type="button" aria-label="Pause music" aria-pressed="true">
+  <main id="mainContent" class="hidden">
+
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Play music" aria-pressed="false">
       <span class="music-icon" id="musicIcon">♫</span>
       <span class="music-label" id="musicLabel">Music On</span>
     </button>
