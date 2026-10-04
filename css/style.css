@@ -202,7 +202,7 @@ h1, h2, h3 { font-weight: normal; }
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background-image: url('../assets/hero_bg.jpg?v=20261003');
+  background-image: url('../assets/hero_bg_diksha_mukul.png?v=20261004');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1276,7 +1276,7 @@ body {
   background-color: var(--c-ivory);
   background-image:
     linear-gradient(rgba(248,239,227,0.34), rgba(248,239,227,0.34)),
-    url('../assets/hero_bg.jpg');
+    url('../assets/hero_bg_diksha_mukul.png?v=20261004');
   background-size: cover;
   background-position: center;
 }
