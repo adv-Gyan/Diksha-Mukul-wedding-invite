@@ -11,17 +11,41 @@ document.addEventListener("DOMContentLoaded", () => {
   const musicIcon = document.getElementById("musicIcon");
   const musicLabel = document.getElementById("musicLabel");
 
-  function updateMusicAvailability() {
-    if (!weddingMusic || !musicToggle) return;
-    const hasSource = weddingMusic.querySelector("source");
-    if (!hasSource || !hasSource.getAttribute("src")) {
-      musicToggle.disabled = true;
-      musicToggle.title = "Wedding music is not available";
-      setMusicButtonState(false);
+  function setMusicButtonState(isPlaying) {
+    if (!musicToggle) return;
+    musicToggle.disabled = false;
+    musicToggle.title = isPlaying ? "Pause wedding music" : "Play wedding music";
+    musicToggle.classList.toggle("is-playing", isPlaying);
+    musicToggle.setAttribute("aria-pressed", String(isPlaying));
+    musicToggle.setAttribute("aria-label", isPlaying ? "Pause music" : "Play music");
+    if (musicIcon) musicIcon.textContent = isPlaying ? "♫" : "♪";
+    if (musicLabel) musicLabel.textContent = isPlaying ? "Music On" : "Music Off";
+  }
+
+  function playWeddingMusic() {
+    if (!weddingMusic) return;
+    weddingMusic.volume = 0.55;
+    const attempt = weddingMusic.play();
+    if (attempt && typeof attempt.then === "function") {
+      attempt.then(() => setMusicButtonState(true)).catch((error) => {
+        console.warn("Wedding music could not start:", error);
+        setMusicButtonState(false);
+      });
     }
   }
 
-  updateMusicAvailability();
+  setMusicButtonState(false);
+
+  if (weddingMusic) {
+    weddingMusic.addEventListener("error", () => {
+      console.error("Wedding music failed to load:", weddingMusic.currentSrc || weddingMusic.src);
+      setMusicButtonState(false);
+    });
+    weddingMusic.addEventListener("loadeddata", () => {
+      console.log("Wedding music loaded:", weddingMusic.currentSrc || weddingMusic.src);
+    });
+    weddingMusic.load();
+  }
 
   if (envelopeWrapper && envelopeImage) {
     envelopeImage.addEventListener("click", () => {
@@ -30,37 +54,23 @@ document.addEventListener("DOMContentLoaded", () => {
       envelopeWrapper.classList.add("is-opening");
       envelopeImage.classList.add("is-glowing");
 
-      // The envelope click is a direct user gesture, so start the music here.
-      if (weddingMusic) {
-        weddingMusic.volume = 0.55;
-        weddingMusic.play().then(() => {
-          setMusicButtonState(true);
-        }).catch(() => {
-          setMusicButtonState(false);
-        });
+      // Reveal the page first, then start playback from the same direct tap gesture.
+      if (mainContent) {
+        mainContent.classList.remove("hidden");
       }
+      playWeddingMusic();
 
       setTimeout(() => {
         envelopeWrapper.classList.add("is-hidden");
-        mainContent.classList.remove("hidden");
         window.scrollTo(0, 0);
       }, 650); 
     });
   }
 
-  function setMusicButtonState(isPlaying) {
-    if (!musicToggle) return;
-    musicToggle.classList.toggle("is-playing", isPlaying);
-    musicToggle.setAttribute("aria-pressed", String(isPlaying));
-    musicToggle.setAttribute("aria-label", isPlaying ? "Pause music" : "Play music");
-    if (musicIcon) musicIcon.textContent = isPlaying ? "♫" : "♪";
-    if (musicLabel) musicLabel.textContent = isPlaying ? "Music On" : "Music Off";
-  }
-
   if (musicToggle && weddingMusic) {
     musicToggle.addEventListener("click", () => {
       if (weddingMusic.paused) {
-        weddingMusic.play().then(() => setMusicButtonState(true)).catch(() => {});
+        playWeddingMusic();
       } else {
         weddingMusic.pause();
         setMusicButtonState(false);
