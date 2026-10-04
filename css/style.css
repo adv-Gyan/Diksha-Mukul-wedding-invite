@@ -1333,6 +1333,28 @@ body {
 }
 
 
+
+/* Pink floral accents and timeline */
+.petal {
+  background: #E78FA3 !important;
+  box-shadow: 0 1px 5px rgba(231,143,163,0.35);
+}
+
+.wavy-line {
+  filter: hue-rotate(315deg) saturate(0.9);
+}
+
+.wavy-line path,
+.wavy-line line,
+.wavy-line polyline {
+  stroke: #E78FA3 !important;
+}
+
+.timeline-item::after {
+  background: #E78FA3 !important;
+  box-shadow: 0 0 0 3px rgba(231,143,163,0.14);
+}
+
 /* =========================================================
    HERO - REFINED WEDDING CARD COMPOSITION
    ========================================================= */
