@@ -2528,57 +2528,75 @@ a {
   top: 0 !important;
   left: 0 !important;
   height: 100% !important;
-  padding: 0 14px !important;
+  padding: 0 12px !important;
 }
 
 .hero-section .hero-names {
   position: absolute !important;
-  top: 8% !important;
+  top: 8.5% !important;
   left: 0 !important;
   width: 100% !important;
   display: flex !important;
   flex-direction: row !important;
   align-items: baseline !important;
   justify-content: center !important;
-  gap: 0.16em !important;
-  font-size: clamp(2.1rem, 8vw, 2.65rem) !important;
+  gap: 0.12em !important;
+  font-size: clamp(1.95rem, 8vw, 2.55rem) !important;
   line-height: 1 !important;
+  letter-spacing: -0.02em !important;
   white-space: nowrap !important;
   text-align: center !important;
+  color: var(--c-maroon) !important;
+  text-shadow: 0 2px 14px rgba(248,239,227,0.98), 0 0 28px rgba(248,239,227,0.78) !important;
 }
 
 .hero-section .hero-date {
   position: absolute !important;
-  top: 72% !important;
+  top: 78.5% !important;
   left: 0 !important;
   width: 100% !important;
   margin: 0 !important;
+  padding: 0 12px !important;
+  box-sizing: border-box !important;
   text-align: center !important;
+  font-size: clamp(0.70rem, 3vw, 0.94rem) !important;
+  letter-spacing: 0.13em !important;
+  line-height: 1.45 !important;
+  color: var(--c-brown) !important;
+  text-shadow: 0 1px 9px rgba(248,239,227,0.98), 0 0 18px rgba(248,239,227,0.72) !important;
 }
 
 .hero-section .hero-content .wedding-hashtag {
   position: absolute !important;
-  top: 79% !important;
+  top: 84.5% !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
   margin: 0 !important;
+  padding: 0 !important;
   white-space: nowrap !important;
+  text-align: center !important;
+  font-size: clamp(0.52rem, 2.4vw, 0.70rem) !important;
+  letter-spacing: 0.17em !important;
+  color: var(--c-maroon) !important;
+  text-shadow: 0 1px 7px rgba(248,239,227,0.98), 0 0 14px rgba(248,239,227,0.72) !important;
 }
 
 @media (max-width: 380px) {
   .hero-section .hero-names {
     top: 8% !important;
-    font-size: 2.05rem !important;
-    gap: 0.13em !important;
+    font-size: 1.92rem !important;
+    gap: 0.10em !important;
   }
 
   .hero-section .hero-date {
-    top: 72% !important;
-    font-size: 0.76rem !important;
+    top: 78.5% !important;
+    font-size: 0.68rem !important;
+    letter-spacing: 0.10em !important;
   }
 
   .hero-section .hero-content .wedding-hashtag {
-    top: 79% !important;
-    font-size: 0.56rem !important;
+    top: 84.5% !important;
+    font-size: 0.51rem !important;
+    letter-spacing: 0.14em !important;
   }
 }
