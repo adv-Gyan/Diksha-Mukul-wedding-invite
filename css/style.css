@@ -2559,7 +2559,7 @@ a {
 
 .hero-section .hero-names {
   position: absolute !important;
-  top: 8.5% !important;
+  top: 15% !important;
   left: 0 !important;
   width: 100% !important;
   display: flex !important;
@@ -2609,7 +2609,7 @@ a {
 
 @media (max-width: 380px) {
   .hero-section .hero-names {
-    top: 8% !important;
+    top: 14.5% !important;
     font-size: 1.92rem !important;
     gap: 0.10em !important;
   }
