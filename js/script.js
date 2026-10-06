@@ -202,6 +202,11 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* =========================================================
+     5. RSVP
+     */
+  const RSVP_URL = "https://script.google.com/macros/s/AKfycbxO0JGc647IwVsGIWf-e508744wk4qquZa9QgUrDi_3Y8jsKtm__tz5WaQV9TVJBc1w2w/exec";
+
+  /* =========================================================
      5. RSVP FORM SUBMISSION
      ========================================================= */
 
