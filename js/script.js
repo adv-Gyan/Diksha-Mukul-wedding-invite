@@ -202,11 +202,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* =========================================================
-     5. RSVP
-     */
-  const RSVP_URL = "https://script.google.com/macros/s/AKfycbxO0JGc647IwVsGIWf-e508744wk4qquZa9QgUrDi_3Y8jsKtm__tz5WaQV9TVJBc1w2w/exec";
-
-  /* =========================================================
      5. RSVP FORM SUBMISSION
      ========================================================= */
 
@@ -215,7 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
    * Replace this placeholder with the /exec URL after deploying
    * the Google Apps Script supplied with this project.
    */
-  const RSVP_ENDPOINT = "YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL";
+  const RSVP_ENDPOINT = "https://script.google.com/macros/s/AKfycbxO0JGc647IwVsGIWf-e508744wk4qquZa9QgUrDi_3Y8jsKtm__tz5WaQV9TVJBc1w2w/exec";
 
   const rsvpForm = document.getElementById("rsvpForm");
   const rsvpSubmitBtn = document.getElementById("rsvpSubmitBtn");
